@@ -18,6 +18,12 @@ angular.module('siege-defense').controller('GameController', ['$interval', funct
         move: function(x, y) {
             this.position.x += x;
             this.position.y += y;
+        },
+        reset: function() {
+            this.position.x = 0;
+            this.position.y = 0;
+            this.health.max = 100;
+            this.health.current = 100;
         }
     };
     
@@ -40,8 +46,7 @@ angular.module('siege-defense').controller('GameController', ['$interval', funct
     };
     
     vm.reset = function() {
-       vm.player.position = { x: 0, y: 0 };
-       vm.player.health = { max: 100, current: 100 };
+        vm.player.reset();
     };
     
     vm.draw = function() {
