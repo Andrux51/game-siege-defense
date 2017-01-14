@@ -36,7 +36,7 @@ angular.module('siege-defense').controller('GameController', ['$interval', funct
         
         vm.draw();
         
-        $interval(vm.draw, 333);
+        $interval(vm.draw);
     };
     
     vm.reset = function() {
