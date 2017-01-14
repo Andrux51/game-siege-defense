@@ -1,0 +1,7 @@
+body {
+    padding-top: 60px;
+}
+
+#gameCanvas {
+    border: 1px solid #aaa;
+}

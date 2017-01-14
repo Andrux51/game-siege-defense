@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" ng-app="siege-defense">
+  <head>
+    <title>{{productName}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- http://getbootstrap.com/css/ -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+    
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      
+      <div class="navbar-inner">
+        
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="/">
+              Chat Lobby
+            </a>
+          </li>
+          
+          <li><a href="#!/game">Game</a></li>
+        </ul>
+        
+        <div class="pull-right">
+          <a class="navbar-brand">{{productName}}</a>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="container" ng-view></div>
+    
+    <!-- vendor scripts -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/vendor/jquery.min.js"></script>
+    <script src="/js/vendor/bootstrap.min.js"></script>
+    <script src="/js/vendor/angular.min.js"></script>
+    <script src="/js/vendor/angular-route.min.js"></script>
+    
+    <!-- development -->
+    <script src="/js/ng-app-config.js"></script>
+    <script src="/js/chat-lobby/chat-lobby.ctrl.js"></script>
+    <script src="/js/game/game.ctrl.js"></script>
+  </body>
+</html>

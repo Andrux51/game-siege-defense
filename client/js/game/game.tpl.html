@@ -1,0 +1,12 @@
+<div class="row">
+    <button class="btn" ng-click="vm.initialize()">New Game</button>
+    
+    <button class="btn" ng-click="vm.player.move(-10, 0)">Left</button>
+    <button class="btn" ng-click="vm.player.move(10, 0)">Right</button>
+    <button class="btn" ng-click="vm.player.move(0, -10)">Up</button>
+    <button class="btn" ng-click="vm.player.move(0, 10)">Down</button>
+    
+    <canvas id="gameCanvas" width="1280" height="720"></canvas>
+</div>
+        
+        

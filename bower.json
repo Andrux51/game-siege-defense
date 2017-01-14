@@ -1,0 +1,22 @@
+{
+  "name": "siege-defense",
+  "description": "game",
+  "main": "server.js",
+  "authors": [
+    "m"
+  ],
+  "license": "MIT",
+  "homepage": "https://siege-defense-andrux51.c9users.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "1.6.1",
+    "angular": "1.6.1",
+    "bootstrap": "^3.3.7"
+  }
+}
