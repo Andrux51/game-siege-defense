@@ -35,6 +35,8 @@ angular.module('siege-defense').controller('GameController', ['$interval', funct
         vm.reset();
         
         vm.draw();
+        
+        $interval(vm.draw, 333);
     };
     
     vm.reset = function() {
@@ -46,7 +48,5 @@ angular.module('siege-defense').controller('GameController', ['$interval', funct
         vm.ctx.clearRect(0, 0, vm.canvasSize.x, vm.canvasSize.y);
         
         vm.player.draw();
-
-        $interval(vm.draw, 333);
     };
 }]);
